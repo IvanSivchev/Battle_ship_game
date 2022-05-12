@@ -192,7 +192,7 @@ class Player(object):
 		self.win = False
 
 
-# This will check is where all opponents ships were killed
+# This checks is where all opponents ships were killed
 def is_game_finished(player1, player2):
 	if player2.field.number_of_ships == 0:
 		player1.win = True
@@ -203,7 +203,7 @@ def is_game_finished(player1, player2):
 	else:
 		return False
 
-# This is switching playes and if it's first turn setting who will make first shot
+# This switches players. if it's first turn setts who will make first shot
 def switch_player(current_player, player1, player2):
 	if current_player == player1:
 		current_player = player2
